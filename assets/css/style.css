@@ -117,7 +117,9 @@ header nav ul a:hover {
     margin-top: 5.2rem;
 }
 
-.hero-content .cta-buttons a.cta-get-started {
+.hero-content .cta-buttons a.cta-get-started,
+.admit .admit-cta a.cta-get-started
+{
     display: inline-block;
     background-color: var(--text-color-sign-up-1eb);
     color: var(--text-color-fff);
@@ -566,6 +568,42 @@ header nav ul a:hover {
     right: 3.4rem;
 }
 
+/* admit */
+.admit {
+    background: #DEF6F5;
+    width: 100%;
+    min-height: 27.2rem;
+    margin-top: 13rem;
+}
+
+.admit .admit-content {
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.admit-content.container {
+    width: 1032px;
+    max-width: calc(100% - 48px);
+}
+
+.admit .admit-content .admit-info .admit-heading {
+    max-width: 42.2rem;
+    color: #070707;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.admit .admit-content .admit-info .admit-description {
+    max-width: 39.7rem;
+    color: var(--text-color-description-767-2);
+    font-size: 1.8rem;
+    line-height: normal;
+    margin-top: 1.8rem;
+}
+
+
+
 @media screen and (max-width: 1024px) {
     /* Header */
     .container .header {
@@ -708,6 +746,7 @@ header nav ul a:hover {
 }
 
 @media screen and (max-width: 424px) {
+
     .container {
         max-width: calc(100% - 12px);
     }
@@ -751,4 +790,12 @@ header nav ul a:hover {
     .testimonials {
         margin-top: 32rem;
     }
+
+    .hero .hero-image .student-avatars {
+        right: 0.5rem;
+    }
+    .hero .hero-image .hero-courses {
+        top: 1.9rem;
+    }
 }
+
