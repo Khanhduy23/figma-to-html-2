@@ -605,16 +605,17 @@ header nav ul a:hover {
 
 
 @media screen and (max-width: 1024px) {
+    html {
+        font-size: 58%; /* ~9.28px */
+    }
     /* Header */
-    .container .header {
+    .container .header,
+    .header nav ul
+    {
         flex-wrap: wrap;
         row-gap: 1rem;
     }
 
-    .header nav ul {
-        flex-wrap: wrap;
-        row-gap: 1rem;
-    }
 
     .hero-content .hero-info .hero-heading {
         max-width: 41.8rem;
@@ -622,9 +623,17 @@ header nav ul a:hover {
 }
 
 @media screen and (max-width: 768px) {
+    html {
+        font-size: 55%; /* ~8.8px */
+    }
     /* Header */
     header {
         position: static;
+    }
+
+    header nav ul li {
+        padding: 0.4rem;
+        margin-right: 2rem;
     }
 
     /* Hero */
@@ -745,7 +754,26 @@ header nav ul a:hover {
     }
 }
 
-@media screen and (max-width: 424px) {
+@media (max-width: 576px) {
+    html {
+        font-size: 50%; /* ~8px */
+    }
+}
+
+/* Mobile rất nhỏ (< 480px) */
+@media (max-width: 480px) {
+    html {
+        font-size: 47%; /* ~7.52px */
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+
+    header nav ul li {
+        padding: 0.4rem;
+        margin-right: 1.3rem;
+    }
 
     .container {
         max-width: calc(100% - 12px);
@@ -787,6 +815,7 @@ header nav ul a:hover {
 }
 
 @media screen and (max-width: 375px) {
+
     .testimonials {
         margin-top: 32rem;
     }
