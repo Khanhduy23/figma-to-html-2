@@ -11,6 +11,10 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+::selection {
+    background: yellow;
+}
+
 :root {
     --text-color-nav-2f3: #2f3a3b;
     --text-color-sign-in-494: #494949;
@@ -447,14 +451,11 @@ header nav ul a:hover {
 
     .hero .hero-content {
         width: 100%;
+        margin-bottom: 3rem;
     }
 
     .hero .hero-image {
         width: 100%;
-    }
-
-    .hero-content .hero-info .hero-heading {
-        max-width: 80%;
     }
 
     .hero .hero-image {
@@ -500,12 +501,25 @@ header nav ul a:hover {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 424px) {
     .container {
-        max-width: calc(100% - 24px);
+        max-width: calc(100% - 12px);
     }
+    .hero-content .hero-info .hero-topic,
+    .features,
+    .courses {
+        margin-top: 5.3rem;
+    }
+
+    /* features */
 
     .features .features-list .feature-item .feature-description {
         max-width: 12.3rem;
+    }
+
+    /* courses */
+    .courses .courses-header {
+        flex-wrap: wrap;
+        row-gap: 1rem;
     }
 }
