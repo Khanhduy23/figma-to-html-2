@@ -2,8 +2,12 @@
     box-sizing: border-box;
 }
 
-html {
+/* html {
     font-size: 62.5%;
+} */
+
+html {
+    font-size: clamp(47%, 1.5vw, 62.5%);
 }
 
 body {
@@ -51,7 +55,7 @@ header nav ul a {
 
 header nav ul li {
     padding: 0.4rem;
-    margin-right: 3.9rem;
+    margin-right: 3rem;
 }
 
 header .auth a.sign-in {
@@ -118,8 +122,7 @@ header nav ul a:hover {
 }
 
 .hero-content .cta-buttons a.cta-get-started,
-.admit .admit-cta a.cta-get-started
-{
+.admit .admit-cta a.cta-get-started {
     display: inline-block;
     background-color: var(--text-color-sign-up-1eb);
     color: var(--text-color-fff);
@@ -240,7 +243,7 @@ header nav ul a:hover {
 
 .hero .hero-image .student-avatars {
     position: absolute;
-    top: 500px;
+    top: 50rem;
     right: 4.5rem;
     width: 20.7rem;
     height: 9rem;
@@ -353,6 +356,7 @@ header nav ul a:hover {
     align-items: center;
     justify-content: center;
     row-gap: 8rem;
+    column-gap: 5rem;
 }
 
 .courses .course-card {
@@ -549,7 +553,7 @@ header nav ul a:hover {
     right: 17.1rem;
     top: 10.7rem;
 }
-.testimonials .testimonial-avatars img:nth-child(4){
+.testimonials .testimonial-avatars img:nth-child(4) {
     left: 7.2rem;
     top: 25.8rem;
 }
@@ -570,7 +574,7 @@ header nav ul a:hover {
 
 /* admit */
 .admit {
-    background: #DEF6F5;
+    background: #def6f5;
     width: 100%;
     min-height: 27.2rem;
     margin-top: 13rem;
@@ -602,33 +606,48 @@ header nav ul a:hover {
     margin-top: 1.8rem;
 }
 
-
-
 @media screen and (max-width: 1024px) {
-    html {
-        font-size: 58%; /* ~9.28px */
-    }
     /* Header */
+    header {
+        padding: 2rem 0;
+        top: -0.5rem;
+    }
+
+    header .logo {
+        margin-right: 3.5rem;
+    }
+
     .container .header,
-    .header nav ul
-    {
+    .header nav ul {
         flex-wrap: wrap;
+        justify-content: center;
         row-gap: 1rem;
     }
 
-
+    /* Hero */
     .hero-content .hero-info .hero-heading {
-        max-width: 41.8rem;
+        max-width: 42rem;
+    }
+
+    /* features */
+    .features {
+        margin-top: 15rem;
+    }
+
+    /* testimonials */
+    .testimonials .testimonial-avatars img:nth-child(3) {
+        width: 18.5rem;
+        height: 18.5rem;
+        right: 4.1rem;
+        top: 13.7rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    html {
-        font-size: 55%; /* ~8.8px */
-    }
     /* Header */
     header {
         position: static;
+        padding: 1rem 0;
     }
 
     header nav ul li {
@@ -644,7 +663,20 @@ header nav ul a:hover {
 
     .hero .hero-content {
         width: 100%;
-        margin-bottom: 3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .hero-content .hero-info .hero-topic {
+        margin-top: 5rem;
+    }
+
+    .hero-content .hero-info .hero-heading {
+        max-width: 100rem;
+        margin-bottom: 2.6rem;
+    }
+
+    .hero-content .hero-info .hero-description {
+        max-width: 100rem;
     }
 
     .hero .hero-image {
@@ -673,6 +705,7 @@ header nav ul a:hover {
     }
 
     .hero .hero-image .student-avatars {
+        top: 35rem;
         right: 4.5rem;
         width: 17.7rem;
         height: 8rem;
@@ -693,12 +726,21 @@ header nav ul a:hover {
         text-align: center;
     }
 
-    /* countdown */
-    .countdown .countdown-list {
-        justify-content: center;
-        gap: 2rem;
+    .features .features-info .features-heading, .courses .courses-info .courses-heading {
+        max-width: 100rem;
     }
 
+    /* countdown */
+    .countdown {
+        margin-top: 22rem;
+    }
+
+    .countdown .countdown-list {
+        justify-content: center;
+        column-gap: 7rem;
+        row-gap: 4rem;
+    }
+    
     .countdown .countdown-list .countdown-item {
         row-gap: 2rem;
     }
@@ -707,6 +749,7 @@ header nav ul a:hover {
     .testimonials {
         flex-direction: column;
         row-gap: 2rem;
+        margin-top: 12rem;
     }
 
     .testimonials .testimonial-comment {
@@ -748,36 +791,24 @@ header nav ul a:hover {
         left: 10.4rem;
     }
 
-    .testimonials .testimonial-avatars img:nth-child(4), .testimonials .testimonial-avatars img:nth-child(5), .testimonials .testimonial-avatars img:nth-child(6) {
+    .testimonials .testimonial-avatars img:nth-child(4),
+    .testimonials .testimonial-avatars img:nth-child(5),
+    .testimonials .testimonial-avatars img:nth-child(6) {
         width: 5.8rem;
         height: 5.8rem;
     }
 }
 
-@media (max-width: 576px) {
-    html {
-        font-size: 50%; /* ~8px */
-    }
-}
-
-/* Mobile rất nhỏ (< 480px) */
-@media (max-width: 480px) {
-    html {
-        font-size: 47%; /* ~7.52px */
-    }
-}
-
-
 @media screen and (max-width: 425px) {
-
-    header nav ul li {
-        padding: 0.4rem;
-        margin-right: 1.3rem;
-    }
-
     .container {
         max-width: calc(100% - 12px);
     }
+
+    /* Header */
+    header nav ul li {
+        margin-right: 1.5rem;
+    }
+
     /* Hero */
     .hero-content .hero-info .hero-topic,
     .features,
@@ -785,15 +816,25 @@ header nav ul a:hover {
         margin-top: 5.3rem;
     }
 
+    .hero-content .hero-info .hero-description {
+        max-width: 50rem;
+    }
+
+    .hero-content .cta-buttons {
+        margin-top: 5rem;
+    }
+
     .hero-content .cta-buttons a.cta-get-started {
         margin-right: 2rem;
-        width: 12.6rem;
     }
 
     /* features */
+    .features {
+        margin-top: 12rem;
+    }
 
     .features .features-list .feature-item .feature-description {
-        max-width: 12.3rem;
+        max-width: 20rem;
     }
 
     /* courses */
@@ -809,22 +850,35 @@ header nav ul a:hover {
         right: 4.1rem;
         top: 18.7rem;
     }
+}
+
+@media screen and (max-width: 499px) {
     .testimonials {
-        margin-top: 20rem;
+        margin-top: 24rem;
     }
+
 }
 
 @media screen and (max-width: 375px) {
+    /* hero */
+    .hero .hero-image .student-avatars {
+        right: 0.5rem;
+    }
+
+    .hero .hero-image .hero-courses {
+        top: 10rem;
+    }
+
+    /* testimonials */
+}
+
+@media screen and (max-width: 320px) {
+    .countdown .countdown-list {
+        gap: 1rem;
+    }
 
     .testimonials {
         margin-top: 32rem;
     }
-
-    .hero .hero-image .student-avatars {
-        right: 0.5rem;
-    }
-    .hero .hero-image .hero-courses {
-        top: 1.9rem;
-    }
+    
 }
-
