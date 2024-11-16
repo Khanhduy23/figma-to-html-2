@@ -606,6 +606,11 @@ header nav ul a:hover {
     margin-top: 1.8rem;
 }
 
+/* footer */
+
+
+/* media queries */
+
 @media screen and (max-width: 1024px) {
     /* Header */
     header {
@@ -726,7 +731,8 @@ header nav ul a:hover {
         text-align: center;
     }
 
-    .features .features-info .features-heading, .courses .courses-info .courses-heading {
+    .features .features-info .features-heading,
+    .courses .courses-info .courses-heading {
         max-width: 100rem;
     }
 
@@ -740,7 +746,7 @@ header nav ul a:hover {
         column-gap: 7rem;
         row-gap: 4rem;
     }
-    
+
     .countdown .countdown-list .countdown-item {
         row-gap: 2rem;
     }
@@ -797,6 +803,7 @@ header nav ul a:hover {
         width: 5.8rem;
         height: 5.8rem;
     }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -856,7 +863,6 @@ header nav ul a:hover {
     .testimonials {
         margin-top: 24rem;
     }
-
 }
 
 @media screen and (max-width: 375px) {
@@ -880,5 +886,4 @@ header nav ul a:hover {
     .testimonials {
         margin-top: 32rem;
     }
-    
 }
