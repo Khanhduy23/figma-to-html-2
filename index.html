@@ -11,46 +11,53 @@
         />
         <link rel="stylesheet" href="assets/css/reset.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
-        <link rel="stylesheet" href="assets/ccs/flexbox.css">
+        <link rel="stylesheet" href="assets/css/flexbox.css" />
         <title>Figma-to-html-2</title>
     </head>
     <body style="height: 10000px">
         <header>
             <div class="container">
-                <div class="header">
+                <div class="header flex-space-between">
                     <div class="logo">
-                        <a href="#!"><img src="assets/img/logo.svg" alt="Logo" /></a>
+                        <a href="#!"
+                            ><img src="assets/img/logo.svg" alt="Logo"
+                        /></a>
                     </div>
-                    <nav class="navigation">
-                        <ul class="nav-list">
-                            <li><a href="#!" class="nav-link active">Home</a></li>
+                    <nav>
+                        <ul class="nav-list flex-container">
+                            <li><a href="#!" class="nav-link">Home</a></li>
                             <li><a href="#!" class="nav-link">Features</a></li>
                             <li><a href="#!" class="nav-link">Pricing</a></li>
                             <li><a href="#!" class="nav-link">About</a></li>
                             <li><a href="#!" class="nav-link">Contact</a></li>
                         </ul>
                     </nav>
-                    <div class="auth">
+                    <div class="auth flex-center">
                         <a href="#!" class="sign-in">Sign in</a>
                         <a href="#!" class="sign-up">Sign up</a>
                     </div>
                 </div>
             </div>
         </header>
-    
+
         <main>
-            <section class="hero container">
+            <section class="hero container flex-container">
                 <div class="hero-content">
                     <div class="hero-info">
                         <p class="hero-topic">😎 EASY LEARNING PLATFORM</p>
                         <h1 class="hero-heading">Words learner come here.</h1>
                         <p class="hero-description">
-                            Build skills with courses, certificates, and get online knowledge from our world-class platform.
+                            Build skills with courses, certificates, and get
+                            online knowledge from our world-class platform.
                         </p>
                     </div>
-                    <div class="cta-buttons">
+                    <div class="cta-buttons flex-inline">
                         <a href="#!" class="cta-get-started">Get Started</a>
-                        <a href="#!" class="cta-watch-video"><img src="assets/icon/play.svg" alt="Play video" /></a>
+                       <a href="#!">
+                            <div class="cta-watch-video flex-center">
+                                <img src="assets/icon/play.svg" alt="Play video" />
+                            </div>
+                       </a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -59,12 +66,24 @@
                         <img src="assets/icon/book.svg" alt="book" />
                         <p class="course-count">Courses 1000+</p>
                     </div>
-                    <div class="schedule-icons">
+                    <div class="schedule-icons flex-direction-column">
                         <p class="schedule-label">Schedules</p>
-                        <img src="assets/icon/schedules-1.svg" alt="schedule 1" />
-                        <img src="assets/icon/schedules-2.svg" alt="schedule 2" />
-                        <img src="assets/icon/schedules-3.svg" alt="schedule 3" />
-                        <img src="assets/icon/schedules-4.svg" alt="schedule 4" />
+                        <img
+                            src="assets/icon/schedules-1.svg"
+                            alt="schedule 1"
+                        />
+                        <img
+                            src="assets/icon/schedules-2.svg"
+                            alt="schedule 2"
+                        />
+                        <img
+                            src="assets/icon/schedules-3.svg"
+                            alt="schedule 3"
+                        />
+                        <img
+                            src="assets/icon/schedules-4.svg"
+                            alt="schedule 4"
+                        />
                     </div>
                     <div class="student-avatars">
                         <p class="student-label">Our Active Students</p>
@@ -73,65 +92,168 @@
                             <img src="assets/img/ava-2.jpg" alt="avatar 2" />
                             <img src="assets/img/ava-3.jpg" alt="avatar 3" />
                             <img src="assets/img/ava-4.jpg" alt="avatar 4" />
-                            <span class="student-count">10K+</span>
+                            <span class="student-count flex-center">10K+</span>
                         </div>
                     </div>
                 </div>
             </section>
-    
+
             <section class="features container">
                 <div class="features-info">
                     <p class="features-topic">Features</p>
-                    <h1 class="features-heading">We are providing suitable features for students.</h1>
-                    <p class="features-description">Read our awesome feature that is absolutely suit for you. Explore the feature and know the best.</p>
+                    <h1 class="features-heading">
+                        We are providing suitable features for students.
+                    </h1>
+                    <p class="features-description">
+                        Read our awesome feature that is absolutely suit for
+                        you. Explore the feature and know the best.
+                    </p>
                 </div>
-                <div class="features-list">
+                <div class="features-list flex-space-between">
                     <div class="feature-item">
-                        <img src="assets/icon/feature-icon1.svg" alt="feature-1">
+                        <img
+                            src="assets/icon/feature-icon1.svg"
+                            alt="feature-1"
+                        />
                         <p class="feature-title">Live Class</p>
-                        <p class="feature-description">We are providing live classes with the best teacher for you</p>
+                        <p class="feature-description">
+                            We are providing live classes with the best teacher
+                            for you
+                        </p>
                     </div>
                     <div class="feature-item">
-                        <img src="assets/icon/feature-icon2.svg" alt="feature-2">
+                        <img
+                            src="assets/icon/feature-icon2.svg"
+                            alt="feature-2"
+                        />
                         <p class="feature-title">Discuss</p>
-                        <p class="feature-description">Conversation with teachers or other students about tasks</p>
+                        <p class="feature-description">
+                            Conversation with teachers or other students about
+                            tasks
+                        </p>
                     </div>
                     <div class="feature-item">
-                        <img src="assets/icon/feature-icon3.svg" alt="feature-3">
+                        <img
+                            src="assets/icon/feature-icon3.svg"
+                            alt="feature-3"
+                        />
                         <p class="feature-title">Task</p>
-                        <p class="feature-description">We give every student tasks for gathering knowledge at home</p>
+                        <p class="feature-description">
+                            We give every student tasks for gathering knowledge
+                            at home
+                        </p>
                     </div>
                 </div>
             </section>
-    
+
             <section class="courses container">
-                <div class="courses-header">
+                <div class="courses-header flex-space-between">
                     <div class="courses-info">
                         <p class="courses-topic">Courses</p>
                         <h1 class="courses-heading">Popular Courses</h1>
-                        <p class="courses-description">Check out our most popular courses that suit you. Find your favorite one here.</p>
+                        <p class="courses-description">
+                            Check out our most popular courses that suit you.
+                            Find your favorite one here.
+                        </p>
                     </div>
                     <div class="view-all">
                         <a href="#!">View All Courses</a>
                     </div>
                 </div>
-                <div class="course-cards">
+                <div class="course-cards flex-space-between">
                     <div class="course-card flex-center">
-                        <a href="#!"><img src="assets/img/course-1.png" alt="course 1" /></a>
+                        <a href="#!"
+                            ><img src="assets/img/course-1.png" alt="course 1"
+                        /></a>
                         <div class="course-info">
-                            <h3 class="course-title"><a href="#!">Web Design</a></h3>
-                            <p class="course-price">Fee <strong>$200</strong></p>
-                            <p class="course-description">Web design from basic to advanced</p>
-                            <div class="course-details flex-default">
-                                <p><img src="assets/icon/Ellipse 20.svg" alt="icon" /><span>40 Classes</span></p>
-                                <p><img src="assets/icon/Ellipse 20.svg" alt="icon" /><span>3 Months</span></p>
+                            <h3 class="course-title">
+                                <a href="#!">Web Design</a>
+                            </h3>
+                            <p class="course-price">
+                                Fee <strong>$200</strong>
+                            </p>
+                            <p class="course-description">
+                                Web design from basic to advanced
+                            </p>
+                            <div class="course-details flex-container">
+                                <p>
+                                    <img
+                                        src="assets/icon/dot.svg"
+                                        alt="icon"
+                                    /><span>40 Classes</span>
+                                </p>
+                                <p>
+                                    <img
+                                        src="assets/icon/dot.svg"
+                                        alt="icon"
+                                    /><span>3 Months</span>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <!-- Repeat structure for other course cards -->
+                    <div class="course-card flex-center">
+                        <a href="#!"
+                            ><img src="assets/img/course-2.png" alt="course 2"
+                        /></a>
+                        <div class="course-info">
+                            <h3 class="course-title">
+                                <a href="#!">Web Design</a>
+                            </h3>
+                            <p class="course-price">
+                                Fee <strong>$200</strong>
+                            </p>
+                            <p class="course-description">
+                                Web design from basic to advanced
+                            </p>
+                            <div class="course-details flex-container">
+                                <p>
+                                    <img
+                                        src="assets/icon/dot.svg"
+                                        alt="icon"
+                                    /><span>40 Classes</span>
+                                </p>
+                                <p>
+                                    <img
+                                        src="assets/icon/dot.svg"
+                                        alt="icon"
+                                    /><span>3 Months</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card flex-center">
+                        <a href="#!"
+                            ><img src="assets/img/course-3.png" alt="course 3"
+                        /></a>
+                        <div class="course-info">
+                            <h3 class="course-title">
+                                <a href="#!">Web Design</a>
+                            </h3>
+                            <p class="course-price">
+                                Fee <strong>$200</strong>
+                            </p>
+                            <p class="course-description">
+                                Web design from basic to advanced
+                            </p>
+                            <div class="course-details flex-container">
+                                <p>
+                                    <img
+                                        src="assets/icon/dot.svg"
+                                        alt="icon"
+                                    /><span>40 Classes</span>
+                                </p>
+                                <p>
+                                    <img
+                                        src="assets/icon/dot.svg"
+                                        alt="icon"
+                                    /><span>3 Months</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-    
+
             <section class="countdown container">
                 <!-- Content for countdown -->
             </section>
