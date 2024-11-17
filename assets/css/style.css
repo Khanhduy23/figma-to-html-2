@@ -924,9 +924,11 @@ header nav ul a:hover {
 }
 
 @media screen and (max-width: 320px) {
+    /* Countdown */
     .countdown .countdown-list {
         gap: 1rem;
     }
+    /* testimonials */
 
     .testimonials {
         margin-top: 32rem;
